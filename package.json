@@ -1,0 +1,22 @@
+{
+  "name": "tcor",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "xml": "node ./src/plugins/tincanXML.js",
+    "zip": "node ./zipper.js",
+    "dev": "vite",
+    "build": "npm run xml && vite build && npm run zip",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "pinia": "^2.0.12",
+    "vite-plugin-singlefile": "^0.7.1",
+    "vue": "^3.2.25",
+    "zip-local": "^0.3.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.0",
+    "vite": "^2.8.0"
+  }
+}

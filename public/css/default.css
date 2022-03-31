@@ -1,0 +1,278 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-size: 10px;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.question-wrapper {
+  position: relative;
+  flex-grow: 1;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  width: 100%;
+}
+
+.question-wrapper-inner {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.question-wrapper .test-send-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  width: 19.3rem;
+  height: 4.1rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  border: 0.2rem solid #0066ba;
+  background: #ffffff;
+  color: #0066ba;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  outline: none;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.question-wrapper .test-send-btn:hover {
+  color: white;
+  background-color: #0066ba;
+}
+
+.question-wrapper .test-send-btn:disabled {
+  background: #ffffff;
+  border: 0.2rem solid #c4c4c4;
+  color: #c4c4c4;
+}
+
+.wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-billet {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  padding: 3rem 4.5rem;
+}
+
+.wrapper-billet-static {
+  width: 148rem;
+  height: 70rem;
+  max-width: 148rem;
+  max-height: 70rem;
+  min-width: 148rem;
+  min-height: 70rem;
+}
+
+.text-block {
+  font-size: 2.096rem;
+  line-height: 1.5;
+}
+
+.text-block .header-6 {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 3.5rem;
+  font-size: 2.6rem;
+}
+
+.arrow-list-item {
+  display: block;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.arrow-list-item:before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  border-top: 0.8rem solid #0066BA;
+  border-left: 0.6rem solid transparent;
+  border-right: 0.6rem solid transparent;
+}
+
+.text-block .delimeter {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #8c8c8c;
+  margin-bottom: 5.182rem;
+}
+
+.text-block-list {
+  margin: 0rem 0rem 4.406rem 0rem;
+  padding: 0rem;
+  list-style: none;
+}
+
+.text-block-list>li {
+  position: relative;
+  margin-bottom: 2.3rem;
+  font-size: 2.6rem;
+  padding-left: 3.4rem;
+}
+
+.text-block-list>li:last-child {
+  margin-bottom: 0rem;
+}
+
+.text-block-list>li:before {
+  content: "";
+  position: absolute;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  left: 0rem;
+  top: 1.8rem;
+  background-color: #0066ba;
+}
+
+.text-block-20>li {
+  font-size: 2rem;
+}
+
+.text-block-20>li::before {
+  top: 1.3rem;
+}
+
+.text-block-list-check {
+  margin: 0rem 0rem 4.406rem 0rem;
+  padding: 0rem;
+  list-style: none;
+}
+
+.text-block-list-check>li {
+  position: relative;
+  margin-bottom: 2.3rem;
+  font-size: 2.6rem;
+  padding-left: 7.5rem;
+}
+
+.text-block-list-check>li:before {
+  content: "";
+  position: absolute;
+  width: 3.6rem;
+  height: 2.6rem;
+  background-image: url("~@/assets/images/ui/check-mark-green.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0rem;
+  top: 1rem;
+}
+
+.check-mark-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-right: 5rem;
+}
+
+.check-mark-list:last-child {
+  margin-right: 0;
+}
+
+.check-mark-list>li {
+  position: relative;
+  padding-left: 7.3rem;
+  box-sizing: border-box;
+  margin-bottom: 5rem;
+}
+
+.check-mark-list>li::before {
+  content: "";
+  position: absolute;
+  left: 2rem;
+  top: 0.6rem;
+  width: 2.4rem;
+  height: 2rem;
+  background: url("~@/assets/images/ui/check-mark-green.svg");
+}
+
+.anim-opacity {
+  opacity: 0;
+  animation: animOpacity 0.5s linear forwards;
+}
+
+@keyframes animOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.anim-slide-up {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: animSlideUp 0.5s linear forwards;
+}
+
+@keyframes animSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.list-5-2 li:before {
+  content: "\2022";
+  color: #0A495B;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.list-red li:before {
+  content: "\2022";
+  color: #E03C34;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
