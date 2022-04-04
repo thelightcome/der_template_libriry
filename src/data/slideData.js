@@ -5,48 +5,14 @@ export default {
     blockId: 0,
     blockType: "CourseMap",
     blockTitle: "DER Templates Libriry",
-    blockBgImage: "./images/coursemap/course-map-bg.png",
+    blockBgImage: "./images/coursemap/course-map-bg.jpg",
   },
   1: {
     blockId: 1,
-    blockType: "SlideLayout",
-    blockTitle: "Clickers",
-    blockBgImage: "",
-    blockImage: "./images/coursemap/course-1.png",
-    blockSlides: {
-      1: {
-        slideId: 1,
-        type: "Slide_1_3",
-        slideTitle: "FlipCards",
-        level: "low",
-        slideBgImage: "1-1-0",
-        insruction: "",
-        data: {
-          title: "Для создания эффективной системы информационной <br> безопасности должны быть разработаны:",
-          items: [{
-            front: "Концепция",
-            back: "Определяет политику, <br> ее принципы <br> и цели."
-          }, {
-            front: "Стандарты",
-            back: "Правила и принципы <br> защиты информации."
-          }, {
-            front: "Процедура",
-            back: "<ul style='list-style: disc; margin: 0rem; text-align: left;'><li>Защита персональных <br> данных;</li><li>Порядок доступа <br> к информационным носителям, <br> системам и ресурсам.</li></ul>"
-          }, {
-            front: "Инструкции",
-            back: "Что и как делать для <br> организации информационной <br> защиты и обеспечения <br> имеющихся стандартов."
-          },],
-          stickerText: ["Стратегию развития ИБ стоит рассматривать как некоторую карту, которая определяет ориентиры на местности и направляет к цели."]
-        },
-      },
-    },
-  },
-  2: {
-    blockId: 2,
     blockType: "TestLayout",
     blockTitle: "Tests",
     blockBgImage: "",
-    blockImage: "./images/coursemap/course-4.png",
+    blockImage: "./images/coursemap/course-1.png",
     result: true,
     blockSlides: {
       1: {
@@ -147,6 +113,169 @@ export default {
           text: "Неверно",
           value: true,
         },]
+      },
+    },
+  },
+  2: {
+    blockId: 2,
+    blockType: "SlideLayout",
+    blockTitle: "Clickers",
+    blockBgImage: "",
+    blockImage: "./images/coursemap/course-2.png",
+    blockSlides: {
+      1: {
+        slideId: 1,
+        type: "FlipCards",
+        slideTitle: "FlipCards",
+        level: "low",
+        slideBgImage: "",
+        insruction: "",
+        data: {
+          items: [{
+            front: "1-front",
+            back: "1-back"
+          }, {
+            front: "2-front",
+            back: "2-back"
+          }, {
+            front: "3-front",
+            back: "3-back"
+          }, {
+            front: "4-front",
+            back: "4-back"
+          },],
+        },
+      },
+      2: {
+        slideId: 2,
+        type: "FlipCardsToggle",
+        slideTitle: "FlipCardsToggle",
+        level: "low",
+        slideBgImage: "",
+        insruction: "",
+        data: {
+          items: [{
+            front: "1-front",
+            back: "1-back"
+          }, {
+            front: "2-front",
+            back: "2-back"
+          }, {
+            front: "3-front",
+            back: "3-back"
+          }, {
+            front: "4-front",
+            back: "4-back"
+          },],
+        },
+      },
+      3: {
+        slideId: 3,
+        type: "FlipCardsOnly",
+        slideTitle: "FlipCardsOnly",
+        level: "low",
+        slideBgImage: "",
+        insruction: "",
+        data: {
+          items: [{
+            front: "1-front",
+            back: "1-back"
+          }, {
+            front: "2-front",
+            back: "2-back"
+          }, {
+            front: "3-front",
+            back: "3-back"
+          }, {
+            front: "4-front",
+            back: "4-back"
+          },],
+        },
+      },
+      4: {
+        slideId: 4,
+        type: "TabColumns",
+        slideTitle: "TabColumns",
+        level: "low",
+        slideBgImage: "",
+        insruction: "",
+        data: {
+          items: [{
+            title: "Header 1",
+            content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur tempora enim ipsum natus optio inventore dolore quos iure cumque adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aut excepturi eveniet maxime neque porro facere quasi illum odit, iste ipsum expedita commodi odio delectus nulla labore cum fuga maiores dolores, at suscipit dicta modi, distinctio laboriosam. Accusantium, ullam! Veniam?"
+          }, {
+            title: "Header 2",
+            content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur tempora enim ipsum natus optio inventore dolore quos iure cumque adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aut excepturi eveniet maxime neque porro facere quasi illum odit, iste ipsum expedita commodi odio delectus nulla labore cum fuga maiores dolores, at suscipit dicta modi, distinctio laboriosam. Accusantium, ullam! Veniam?"
+          }, {
+            title: "Header 3",
+            content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur tempora enim ipsum natus optio inventore dolore quos iure cumque adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aut excepturi eveniet maxime neque porro facere quasi illum odit, iste ipsum expedita commodi odio delectus nulla labore cum fuga maiores dolores, at suscipit dicta modi, distinctio laboriosam. Accusantium, ullam! Veniam?"
+          },],
+        },
+      },
+      5: {
+        slideId: 5,
+        type: "TabRows",
+        slideTitle: "TabRows",
+        level: "low",
+        slideBgImage: "",
+        insruction: "",
+        data: {
+          items: [{
+            title: "Header 1",
+            content: "1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur tempora enim ipsum natus optio inventore dolore quos iure cumque adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          }, {
+            title: "Header 2",
+            content: "2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur tempora enim ipsum natus optio inventore dolore quos iure cumque adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          }, {
+            title: "Header 3",
+            content: "3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur tempora enim ipsum natus optio inventore dolore quos iure cumque adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          }, {
+            title: "Header 4",
+            content: "4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur tempora enim ipsum natus optio inventore dolore quos iure cumque adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          },],
+        },
+      }
+    },
+  },
+  3: {
+    blockId: 3,
+    blockType: "SlideLayout",
+    blockTitle: "Drag And Drops",
+    blockBgImage: "",
+    blockImage: "./images/coursemap/course-3.png",
+    blockSlides: {
+      1: {
+        slideId: 1,
+        type: "DnDRatio",
+        slideTitle: "DnDRatio",
+        level: "hard",
+        slideBgImage: "",
+        insruction: "",
+        data: {
+          drops: [{
+            type: 1,
+            title: "title - 1"
+          }, {
+            type: 2,
+            title: "title - 2"
+          }, {
+            type: 3,
+            title: "title - 3"
+          },],
+          drags: [{
+            id: 1,
+            type: [1],
+            text: "1  Lorem ipsum dolor sit amet."
+          }, {
+            id: 2,
+            type: [2],
+            text: "2  Lorem ipsum dolor sit amet."
+          }, {
+            id: 3,
+            type: [3],
+            text: "3  Lorem ipsum dolor sit amet."
+          }]
+        },
       },
     },
   },
